@@ -14,7 +14,7 @@ class CreateAssertivesTable extends Migration
             $table->string('title', 255);
             $table->string('slug', 255);
             $table->string('seo_title', 255);
-            $table->string('seo_key', 255);
+            $table->string('seo_keywords', 255);
             $table->text('seo_description');
             $table->text('description');
             $table->timestamps();

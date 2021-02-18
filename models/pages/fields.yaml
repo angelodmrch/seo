@@ -17,7 +17,7 @@ fields:
         type: textarea
         size: small
 
-    seo_key:
+    seo_keywords:
         label: Mate Keywords
         type: text
         commentAbove: Separe por Vírgula

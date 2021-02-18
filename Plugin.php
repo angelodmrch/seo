@@ -1,6 +1,7 @@
 <?php namespace Dmrch\Seo;
 
 use Backend;
+use Event;
 use System\Classes\PluginBase;
 
 /**
@@ -40,7 +41,69 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
+        // Extend all backend form usage
+        Event::listen('backend.form.extendFields', function($widget) {
 
+            // Only for the Post controller
+            if (!$widget->getController() instanceof \RainLab\Blog\Controllers\Posts) {
+                return;
+            }
+
+            // Only for the Post model
+            if (!$widget->model instanceof \RainLab\Blog\Models\Post) {
+                return;
+            }   
+
+            $widget->addSecondaryTabFields([
+                'seo_title' => [
+                    'tab' => 'SEO',
+                    'label' => "Title",
+                    'type' => 'text',
+                ],
+
+                'seo_description' => [
+                    'tab' => 'SEO',
+                    'label' => "Description",
+                    'type' => 'textarea',
+                ],
+
+                'seo_keywords' => [
+                    'tab' => 'SEO',
+                    'label' => "Keywords",
+                    'type' => 'textarea',
+                ]
+            ]);
+        });
+
+        Event::listen('backend.form.extendFields', function($widget) {
+
+             // Only for the Post controller
+            if (!$widget->getController() instanceof \RainLab\Blog\Controllers\Categories) {
+                return;
+            }
+
+            // Only for the Post model
+            if (!$widget->model instanceof \RainLab\Blog\Models\Category) {
+                return;
+            }   
+
+            $widget->addFields([
+                'seo_title' => [
+                    'label' => "SEO Title",
+                    'type' => 'text',
+                ],
+
+                'seo_description' => [
+                    'label' => "SEO Description",
+                    'type' => 'textarea',
+                ],
+
+                'seo_keywords' => [
+                    'label' => "SEO Keywords",
+                    'type' => 'textarea',
+                ]
+            ]);
+        });
     }
 
     /**

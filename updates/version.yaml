@@ -2,3 +2,8 @@
     - First version of Seo
     - create_assertives_table.php
     - create_pages_table.php
+
+1.0.2: 
+    - Integration whit RainLab.Blog
+    - update_rainlab_blog_categories_table.php
+    - update_rainlab_blog_posts_table.php

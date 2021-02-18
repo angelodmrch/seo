@@ -40,7 +40,7 @@ tabs:
             label: Descrição
             type: textarea
 
-        seo_key:
+        seo_keywords:
             tab: SEO
             label: Palavras Chaves
             commentAbove: Separar por vírgulas

@@ -13,7 +13,7 @@ class CreatePagesTable extends Migration
             $table->increments('id');
             $table->text('pages');
             $table->string('seo_title', 255);
-            $table->string('seo_key', 255);
+            $table->string('seo_keywords', 255);
             $table->text('seo_description');
             $table->timestamps();
         });
