@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Título
+        searchable: true
+
+    slug:
+        label: slug
+        
+    created_at:
+        label: Data de criação
+        type: datetime
+        format: d/m/Y H:i:s

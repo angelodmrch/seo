@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    head:
+        label: Head
+        type: textarea
+
+    scripts:
+          label: Scripts
+          type: textarea

@@ -1,0 +1,23 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    pages:
+        label: pages
+        type: checkboxlist
+        quickselect: true
+
+    seo_title:
+        label: Meta Título
+        type: text
+
+    seo_description:
+        label: Meta Descrição
+        type: textarea
+        size: small
+
+    seo_key:
+        label: Mate Keywords
+        type: text
+        commentAbove: Separe por Vírgula

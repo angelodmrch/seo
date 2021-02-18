@@ -1,0 +1,13 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    pages:
+        label: Página
+        searchable: true
+
+    updated_at:
+        label: Data de Modificação
+        type: datetime
+        format: d/m/Y H:i:s

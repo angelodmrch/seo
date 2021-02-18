@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Page
+
+# Model Form Field configuration
+form: $/dmrch/seo/models/pages/fields.yaml
+
+# Model Class name
+modelClass: Dmrch\Seo\Models\Pages
+
+# Default redirect location
+defaultRedirect: dmrch/seo/pages
+
+# Create page
+create:
+    title: Create Page
+    redirect: dmrch/seo/pages/update/:id
+    redirectClose: dmrch/seo/pages
+
+# Update page
+update:
+    title: Edit Page
+    redirect: dmrch/seo/pages
+    redirectClose: dmrch/seo/pages
+
+# Preview page
+preview:
+    title: Preview Page

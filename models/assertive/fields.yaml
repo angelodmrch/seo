@@ -1,0 +1,49 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Título
+        span: left
+        placeholder: Título da página
+        required: true
+
+    slug:
+        label: Slug
+        span: right
+        placeholder: Slug da página
+        required: true
+        preset:
+            field: title
+            type: slug
+
+tabs:
+    stretch: true
+    fields:
+        description:
+            tab: Geral
+            label: Conteúdo
+            type: richeditor
+            span: full
+            language: html  
+            size: huge
+
+        seo_title:
+            tab: SEO
+            label: Título
+            type: text
+            span: full
+
+        seo_description:
+            tab: SEO
+            label: Descrição
+            type: textarea
+
+        seo_key:
+            tab: SEO
+            label: Palavras Chaves
+            commentAbove: Separar por vírgulas
+            type: textarea
+            span: full
+            size: medium

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Assertive
+
+# Model Form Field configuration
+form: $/dmrch/seo/models/assertive/fields.yaml
+
+# Model Class name
+modelClass: Dmrch\Seo\Models\Assertive
+
+# Default redirect location
+defaultRedirect: dmrch/seo/assertive
+
+# Create page
+create:
+    title: Create Assertive
+    redirect: dmrch/seo/assertive/update/:id
+    redirectClose: dmrch/seo/assertive
+
+# Update page
+update:
+    title: Edit Assertive
+    redirect: dmrch/seo/assertive
+    redirectClose: dmrch/seo/assertive
+
+# Preview page
+preview:
+    title: Preview Assertive
