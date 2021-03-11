@@ -126,7 +126,7 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-         return [
+        return [
             'dmrch.seo.access_pages' => [
                 'tab'   => 'SEO',
                 'label' => 'Pages'
@@ -157,20 +157,18 @@ class Plugin extends PluginBase
                         'label'       => 'Pages',
                         'icon'        => 'icon-file-code-o',
                         'url'         => Backend::url('dmrch/seo/pages'),   
-                        'permissions' => ['dmrch.seo.access_pages'],
- 
+                        'permissions' => ['dmrch.seo.access_pages'] 
                     ],
                     'assertive' => [
                         'label'       => 'Assertive',
                         'icon'        => 'icon-file-code-o',
                         'url'         => Backend::url('dmrch/seo/assertive'),
-                        'permissions' => ['dmrch.seo.access_assertive'], 
+                        'permissions' => ['dmrch.seo.access_assertive']
                     ]
                 ]
             ]
         ];
-    }
-    
+    }    
 
     public function registerSettings()
     {
