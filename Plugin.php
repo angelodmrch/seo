@@ -176,7 +176,7 @@ class Plugin extends PluginBase
             'settings' => [
                 'label'       => 'SEO',
                 'description' => 'Manage user based settings.',
-                'category'    => 'SEO',
+                'category'    => 'Geral',
                 'icon'        => 'icon-cog',
                 'class'       => 'Dmrch\Seo\Models\Settings',
                 'order'       => 500,
